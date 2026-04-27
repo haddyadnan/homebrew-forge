@@ -28,8 +28,8 @@ class Codemarp < Formula
 
   on_intel do
     resource "tree-sitter-typescript" do
-      url "https://files.pythonhosted.org/packages/TODO/tree_sitter_typescript-0.23.2-cp39-abi3-macosx_10_9_x86_64.whl"
-      sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      url "https://files.pythonhosted.org/packages/28/95/4c00680866280e008e81dd621fd4d3f54aa3dad1b76b857a19da1b2cc426/tree_sitter_typescript-0.23.2-cp39-abi3-macosx_10_9_x86_64.whl"
+      sha256 "3cd752d70d8e5371fdac6a9a4df9d8924b63b6998d268586f7d374c9fba2a478"
     end
   end
 
