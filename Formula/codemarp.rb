@@ -19,9 +19,18 @@ class Codemarp < Formula
     sha256 "b13e090f725f5b9c86aa455a268553c65cadf325471ad5b65cd29cac8a1a68ac"
   end
 
-  resource "tree-sitter-typescript" do
-    url "https://files.pythonhosted.org/packages/1e/fc/bb52958f7e399250aee093751e9373a6311cadbe76b6e0d109b853757f35/tree_sitter_typescript-0.23.2.tar.gz"
-    sha256 "7b167b5827c882261cb7a50dfa0fb567975f9b315e87ed87ad0a0a3aedb3834d"
+  on_arm do
+    resource "tree-sitter-typescript" do
+      url "https://files.pythonhosted.org/packages/8f/2f/1f36fda564518d84593f2740d5905ac127d590baf5c5753cef2a88a89c15/tree_sitter_typescript-0.23.2-cp39-abi3-macosx_11_0_arm64.whl"
+      sha256 "c7cc1b0ff5d91bac863b0e38b1578d5505e718156c9db577c8baea2557f66de8"
+    end
+  end
+
+  on_intel do
+    resource "tree-sitter-typescript" do
+      url "https://files.pythonhosted.org/packages/TODO/tree_sitter_typescript-0.23.2-cp39-abi3-macosx_10_9_x86_64.whl"
+      sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    end
   end
 
   def install
@@ -29,6 +38,6 @@ class Codemarp < Formula
   end
 
   test do
-    system "#{bin}/codemarp", "--help"
+    system "#{bin}/codemarp", "--version"
   end
 end
