@@ -56,4 +56,3 @@ class Codemarp < Formula
   test do
     system "#{bin}/codemarp", "--version"
   end
-end
