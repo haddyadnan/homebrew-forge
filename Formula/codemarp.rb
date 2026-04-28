@@ -40,11 +40,13 @@ class Codemarp < Formula
     venv.pip_install resource("tree-sitter-python")
 
     resource("tree-sitter-typescript").stage do
-      wheel = Dir["*.whl"].first
-      raise "tree-sitter-typescript wheel not found" if wheel.nil?
-
-      system libexec/"bin/pip", "install", "--no-deps", "--no-index", wheel
+      wheel = Pathname.pwd/Dir["*.whl"].fetch
+      system libexec/"bin/python", "-m", "pip", "install", "--no-deps", "--no-index", wheel
     end
+
+    venv.pip_install_and_link buildpath
+  end
+
 
     venv.pip_install_and_link buildpath
   end
