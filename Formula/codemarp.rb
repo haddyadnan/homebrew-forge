@@ -47,9 +47,7 @@ class Codemarp < Formula
     venv.pip_install_and_link buildpath
   end
 
-
-
-
   test do
     system "#{bin}/codemarp", "--version"
   end
+end
