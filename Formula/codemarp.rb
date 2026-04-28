@@ -48,9 +48,6 @@ class Codemarp < Formula
   end
 
 
-    venv.pip_install_and_link buildpath
-  end
-
 
 
   test do
