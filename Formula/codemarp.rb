@@ -3,8 +3,8 @@ class Codemarp < Formula
 
   desc "Visualize code architecture, call graphs, and control flow"
   homepage "https://github.com/haddyadnan/codemarp"
-  url "https://github.com/haddyadnan/codemarp/archive/refs/tags/v0.4.2.tar.gz"
-  sha256 "ee613843671fec9087e5566c3d9d660eed8aa89e22b9cc33fd9c13892a0d90e3"
+  url "https://github.com/haddyadnan/codemarp/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "df8a621c1d9f2518e729f1d451658be509ce5902f8ab687cf689fc4a77b7850c"
   license "MIT"
 
   depends_on "python@3.12"
